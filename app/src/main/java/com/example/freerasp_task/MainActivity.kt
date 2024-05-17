@@ -9,5 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val talsecApp: TalsecApp = this.applicationContext as TalsecApp
+        talsecApp.setCurrentActivity(this)
     }
 }
