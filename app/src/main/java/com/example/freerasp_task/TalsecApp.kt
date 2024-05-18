@@ -29,12 +29,11 @@ class TalsecApp : Application(), ThreatListener.ThreatDetected {
     }
 
     companion object {
-        private const val expectedPackageName = "com.example.freerasp_task" // Don't use Context.getPackageName!
+        private const val expectedPackageName = "com.example.freerasp_task"
         private val expectedSigningCertificateHashBase64 = arrayOf(
-            "mVr/qQLO8DKTwqlL+B1qigl9NoBnbiUs8b4c2Ewcz0k=",
-            "cVr/qQLO8DKTwqlL+B1qigl9NoBnbiUs8b4c2Ewcz0m="
-        ) // Replace with your release (!) signing certificate hashes
-        private const val watcherMail = "zofka.tunova@gmail.com" // for Alerts and Reports
+            "7WWlIvgTs205YJf1WbeckXb/Q9j/fNKvDtvSQmxvOcQ="
+        )
+        private const val watcherMail = "xtunova@stuba.sk"
         private val supportedAlternativeStores = emptyArray<String>()
         private val isProd = true
     }
