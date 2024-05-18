@@ -56,9 +56,11 @@ class TalsecApp : Application(), ThreatListener.ThreatDetected {
 
     override fun onUntrustedInstallationSourceDetected() {
         if (this.currentActivity != null) {
-            this.currentActivity!!.findViewById<TextView>(R.id.textView1).setText("chybicka :) cmuk")
+            val msg : String = " Warning: This app was not installed from the official source (Google Play Store)." +
+                    "It may have been tampered with by attackers." +
+                    "We strongly recommend uninstalling it immediately for your security."
+            this.currentActivity!!.findViewById<TextView>(R.id.textView1).setText(msg)
         }
-//        TODO("Not yet implemented")
     }
 
     override fun onHookDetected() {
